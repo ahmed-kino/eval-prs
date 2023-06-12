@@ -38,17 +38,23 @@ NOTE: If you don't know how to set up `GITHUB_API_KEY` please check this [link](
 
 NOTE: If you don't know how to set up `OPENAI_API_KEY` please check this [link](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/#:~:text=Go%20to%20OpenAI's%20Platform%20website,generate%20a%20new%20API%20key.)
 
+- make sure you have `make` installed. You can check these links ([Ubuntu](https://askubuntu.com/questions/161104/how-do-i-install-make), [Windows](https://linuxhint.com/install-use-make-windows/), [MacOS](https://stackoverflow.com/questions/10265742/how-to-install-make-and-gcc-on-a-mac)) on how to install make
+
 ## Run directly on you machine
 
-- make sure you have [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/)
+- Make sure you have [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/)
 
 - Make sure you have python `virtualenv` setup. You can check this [link](https://docs.python.org/3/library/venv.html) on how to set virtualenv
 
 - Run the following command `$ pip install -r requirements.txt`
 
-- make sure you have `make` installed. You can check these links ([Ubuntu](https://askubuntu.com/questions/161104/how-do-i-install-make), [Windows](https://linuxhint.com/install-use-make-windows/), [MacOS](https://stackoverflow.com/questions/10265742/how-to-install-make-and-gcc-on-a-mac)) on how to install make
-
-- Run the following command `$ make`
+- Run the following command `$ make run`
 
 
 ## Run with docker (to be done later)
+
+- Make sure you have docker install: [Download link](https://docs.docker.com/engine/install/)
+
+- Run the following command: `$ make`. This command will build the docker image and run it.
+    - If you want to build the docker image only run the following command: `$ make build`
+    - If you want to run the docker image only run the following command `$ make run-docker`
