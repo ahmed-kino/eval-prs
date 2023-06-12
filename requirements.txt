@@ -1,0 +1,187 @@
+appnope @ file:///Users/builder/ci_310/appnope_1642500616005/work
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+Cython==0.29.35
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+ipython @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cd4ia5pr17/croot/ipython_1680701875298/work
+jedi @ file:///opt/concourse/worker/volumes/live/18b71546-5bde-4add-72d1-7d16b76f0f7a/volume/jedi_1644315243726/work
+matplotlib-inline @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_9ddl71oqte/croots/recipe/matplotlib-inline_1662014471815/work
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+prompt-toolkit @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_82emz7mook/croot/prompt-toolkit_1672387300396/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+Pygments @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cflayrfqsi/croot/pygments_1684279981084/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+traitlets @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0dtilxc0bw/croot/traitlets_1671143889152/work
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+aiohttp==3.8.4
+aiosignal==1.3.1
+async-timeout==4.0.2
+attrs==23.1.0
+backoff==2.2.1
+botocore==1.29.151
+certifi==2023.5.7
+charset-normalizer==3.1.0
+frozenlist==1.3.3
+gql==3.4.1
+graphql-core==3.2.3
+idna==3.4
+jmespath==1.0.1
+multidict==6.0.4
+python-dateutil==2.8.2
+requests==2.31.0
+requests-toolbelt==0.10.1
+six==1.16.0
+urllib3==1.26.16
+websockets==10.4
+yarl==1.9.2
+aiohttp==3.8.4
+aiosignal==1.3.1
+async-timeout==4.0.2
+attrs==23.1.0
+backoff==2.2.1
+botocore==1.29.151
+certifi==2023.5.7
+charset-normalizer==3.1.0
+frozenlist==1.3.3
+graphql-core==3.2.3
+idna==3.4
+jmespath==1.0.1
+multidict==6.0.4
+python-dateutil==2.8.2
+requests==2.31.0
+requests-toolbelt==0.10.1
+six==1.16.0
+urllib3==1.26.16
+websockets==10.4
+yarl==1.9.2
+aiohttp==3.8.4
+aiosignal==1.3.1
+appnope==0.1.3
+asttokens==2.2.1
+async-timeout==4.0.2
+attrs==23.1.0
+backcall==0.2.0
+backoff==2.2.1
+black==23.3.0
+botocore==1.29.151
+certifi==2023.5.7
+charset-normalizer==3.1.0
+click==8.1.3
+dataclasses-json==0.5.8
+decorator==5.1.1
+executing==1.2.0
+frozenlist==1.3.3
+graphql-core==3.2.3
+greenlet==2.0.2
+idna==3.4
+ipython==8.14.0
+jedi==0.18.2
+jmespath==1.0.1
+langchain==0.0.197
+langchainplus-sdk==0.0.8
+marshmallow==3.19.0
+marshmallow-enum==1.5.1
+matplotlib-inline==0.1.6
+multidict==6.0.4
+mypy-extensions==1.0.0
+numexpr==2.8.4
+numpy==1.24.3
+openai==0.27.8
+openapi-schema-pydantic==1.2.4
+packaging==23.1
+parso==0.8.3
+pathspec==0.11.1
+pexpect==4.8.0
+pickleshare==0.7.5
+platformdirs==3.5.3
+prompt-toolkit==3.0.38
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pydantic==1.10.9
+Pygments==2.15.1
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.31.0
+requests-toolbelt==0.10.1
+six==1.16.0
+SQLAlchemy==2.0.16
+stack-data==0.6.2
+tenacity==8.2.2
+tomli==2.0.1
+tqdm==4.65.0
+traitlets==5.9.0
+typing-inspect==0.9.0
+typing_extensions==4.6.3
+urllib3==1.26.16
+wcwidth==0.2.6
+websockets==10.4
+yarl==1.9.2
+aiohttp==3.8.4
+aiosignal==1.3.1
+appnope==0.1.3
+asttokens==2.2.1
+async-timeout==4.0.2
+attrs==23.1.0
+backcall==0.2.0
+backoff==2.2.1
+black==23.3.0
+botocore==1.29.151
+certifi==2023.5.7
+charset-normalizer==3.1.0
+click==8.1.3
+dataclasses-json==0.5.8
+decorator==5.1.1
+executing==1.2.0
+frozenlist==1.3.3
+graphql-core==3.2.3
+greenlet==2.0.2
+idna==3.4
+ipdb==0.13.13
+ipython==8.14.0
+jedi==0.18.2
+jmespath==1.0.1
+langchain==0.0.197
+langchainplus-sdk==0.0.8
+marshmallow==3.19.0
+marshmallow-enum==1.5.1
+matplotlib-inline==0.1.6
+multidict==6.0.4
+mypy-extensions==1.0.0
+numexpr==2.8.4
+numpy==1.24.3
+openai==0.27.8
+openapi-schema-pydantic==1.2.4
+packaging==23.1
+parso==0.8.3
+pathspec==0.11.1
+pexpect==4.8.0
+pickleshare==0.7.5
+platformdirs==3.5.3
+prompt-toolkit==3.0.38
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pydantic==1.10.9
+Pygments==2.15.1
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+PyYAML==6.0
+requests==2.31.0
+requests-toolbelt==0.10.1
+six==1.16.0
+SQLAlchemy==2.0.16
+stack-data==0.6.2
+tenacity==8.2.2
+tomli==2.0.1
+tqdm==4.65.0
+traitlets==5.9.0
+typing-inspect==0.9.0
+typing_extensions==4.6.3
+urllib3==1.26.16
+wcwidth==0.2.6
+websockets==10.4
+yarl==1.9.2
