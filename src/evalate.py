@@ -14,22 +14,22 @@ class Evaluate(Runner):
             json_agent_executor = self.client.json_agent_executor(commit)
             try:
                 first_answer = json_agent_executor.run(
-                    "Review the following code 'in the commit' and check wether it has been written in modern programming standards and formatting. provide me with yes or no answer"
+                    "Review the commit_message and check wether it has good description . provide me with yes or no answer"
                 )
             except Exception as e:
                 self.logger.error(
-                    f"Could Not process commit for the first answer REASON: {e}"
+                    f"Could not process commit for the first answer REASON: {e}"
                 )
                 first_answer = "No"
             try:
                 second_answer = json_agent_executor.run(
-                    "Review the following code 'in the commit' for any logical or security concerns. provide only a number on a scale of 1 to 10 based on your findings"
+                    "Review the following code 'in the commit' and check wether commit_message is relevant to the commit changes. Provide Yes or No answer"
                 )
             except Exception as e:
                 self.logger.error(
-                    f"Could Not process commit for the second answer REASON: {e}"
+                    f"Could not process commit for the second answer REASON: {e}"
                 )
-                second_answer = 0
+                second_answer = "No"
             commits_with_evaluation.append(
                 self._save_results(commit, first_answer, second_answer)
             )
@@ -47,7 +47,7 @@ class Evaluate(Runner):
 
     def _save_results(self, commit, first_answer, second_answer):
         points = 10 if first_answer == "Yes" else 0
-        points += int(second_answer)
+        points += 10 if second_answer == "Yes" else 0
         return dict(
             sha=commit.get("sha"),
             user=commit.get("user"),

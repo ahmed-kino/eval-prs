@@ -31,7 +31,7 @@ class GithubClient:
     def get_commits_by_author(self):
         try:
             return self._get(
-                f"{self.base_url}/repos/{self.owner}/{self.repo}/commits?q=author:{self.author}"
+                f"{self.base_url}/repos/{self.owner}/{self.repo}/commits?q=author:{self.author}&per_page:10"
             )
         except Exception as e:
             self.logger.error(f"Error occurred. Reason: {e}")
