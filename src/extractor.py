@@ -29,6 +29,7 @@ class Extractor(Runner):
             commit_list.append(
                 dict(
                     sha=sha,
+                    user=commit_details.get("author").get("login"),
                     commit_message=commit_details.get("commit").get("message"),
                     html_url=commit_details.get("html_url"),
                     files=files,

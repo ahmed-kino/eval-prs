@@ -23,3 +23,8 @@ class Runner(ABC):
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, "w") as file:
             file.write(json.dumps(file_content, indent=2))
+
+    def write_to_file(self, filepath, file_content):
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        with open(filepath, "w") as file:
+            file.write(file_content)
