@@ -22,6 +22,12 @@ def main():
     extractor = Extractor(client=github_client)
     extractor.run()
 
+    # evaluate commits using GPT model
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    openai_client = OpenAIClient(openai_api_key=OPENAI_API_KEY)
+    evaluate = Evaluate(openai_client)
+    evaluate.run()
+
 
 if __name__ == "__main__":
     main()

@@ -28,12 +28,15 @@ we need to pass the owner and the repo name in the prompt
 
 - Make sure to set all the environment variables right
 ```.env
+OPENAI_API_KEY=<openai api key>
 GITHUB_API_KEY="<github api key>"
 OWNER="<owner>"
 AUTHOR="<author>"
 REPO="<repo name>"
 ```
 NOTE: If you don't know how to set up `GITHUB_API_KEY` please check this [link](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#about-personal-access-tokens)
+
+NOTE: If you don't know how to set up `OPENAI_API_KEY` please check this [link](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/#:~:text=Go%20to%20OpenAI's%20Platform%20website,generate%20a%20new%20API%20key.)
 
 ## Run directly on you machine
 
