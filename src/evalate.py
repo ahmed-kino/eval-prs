@@ -26,4 +26,6 @@ class Evaluate(Runner):
     def _save_results(self, commit, first_answer, second_answer):
         points = 10 if first_answer == "Yes" else 0
         points += int(second_answer)
-        return dict(sha=commit["sha"], html_url=commit["html_url"], points=points)
+        return dict(
+            sha=commit.get("sha"), html_url=commit.get("html_url"), points=points
+        )

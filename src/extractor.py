@@ -6,12 +6,12 @@ class Extractor(Runner):
         self.logger.info(
             f"Extracting commits for user {self.client.author} in {self.client.owner}/{self.client.repo} repo..."
         )
-        commits = self.client.get_commits()
+        commits = self.client.get_commits_by_author()
 
         sha_set = set()
         self.logger.info("Getting list of commit sha only...")
         for commit in commits:
-            sha_set.add(commit["sha"])
+            sha_set.add(commit.get("sha"))
 
         commit_list = []
         self.logger.info("Processing shas started...")
@@ -22,15 +22,15 @@ class Extractor(Runner):
                 f"Extract files changes and commit messages from {sha[:5]}..."
             )
             files = [
-                dict(filename=file["filename"], patch=file["patch"])
-                for file in commit_details["files"]
+                dict(filename=file.get("filename"), patch=file.get("patch", ""))
+                for file in commit_details.get("files")
             ]
 
             commit_list.append(
                 dict(
                     sha=sha,
-                    commit_message=commit_details["commit"]["message"],
-                    html_url=commit_details["html_url"],
+                    commit_message=commit_details.get("commit").get("message"),
+                    html_url=commit_details.get("html_url"),
                     files=files,
                 )
             )
