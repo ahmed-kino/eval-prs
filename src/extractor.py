@@ -18,6 +18,8 @@ class Extractor(Runner):
         for sha in sha_set:
             commit_details = self.client.get_commit_details(sha)
 
+            from pprint import pprint as pp
+
             self.logger.info(
                 f"Extract files changes and commit messages from {sha[:5]}..."
             )
@@ -29,6 +31,7 @@ class Extractor(Runner):
             commit_list.append(
                 dict(
                     sha=sha,
+                    owner=self.client.owner,
                     user=commit_details.get("author").get("login"),
                     commit_message=commit_details.get("commit").get("message"),
                     html_url=commit_details.get("html_url"),

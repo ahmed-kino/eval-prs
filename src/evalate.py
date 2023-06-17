@@ -1,5 +1,4 @@
 from src.runner import Runner
-from src.utils.create_email import create_email
 
 
 class Evaluate(Runner):
@@ -41,8 +40,10 @@ class Evaluate(Runner):
     def _create_template(self):
         data = self.load_file("data/results.json")
         max_point_value = max(data, key=lambda x: x["points"])
-        email_template = create_email(**max_point_value)
+        owner = max_point_value.get("owner")
         user = max_point_value.get("user")
+        commit_url = max_point_value.get("html_url")
+        email_template = self.client.generate_email_template(owner, user, commit_url)
         self.write_to_file(f"template/email_to_{user}.txt", email_template)
 
     def _save_results(self, commit, first_answer, second_answer):
